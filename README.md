@@ -1,5 +1,9 @@
 # gordon_ramsay
 
-A new Flutter application.
+HOW TO RUN THIS PROJECT:
 
-If you want to run this in an emulator, use the "Pixel_3a_API_30_x86" emulator.
+step1: clone this directory
+step2: run pub get
+step3: click configure
+step4: select the "Pixel_3a_API_30_x86" emulator
+step5: run the main.dart file.
