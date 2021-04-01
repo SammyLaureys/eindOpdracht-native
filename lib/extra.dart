@@ -41,7 +41,7 @@ class ExtraTreeState extends State<ExtraTree>{
                   });
                 },
               ),
-              Text('verberg Flutter-logo'),
+              Text('verberg Image'),
             ]),
             Row(children: <Widget>[
               Radio(
@@ -53,7 +53,7 @@ class ExtraTreeState extends State<ExtraTree>{
                   });
                 },
               ),
-              Text('toon Flutter-logo'),
+              Text('toon Image'),
             ])
           ]),
           Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: <Widget>[
