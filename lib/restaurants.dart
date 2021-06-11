@@ -39,6 +39,12 @@ class RestaurantTreeState extends State<RestaurantTree> {
           child: DropdownButton<String>(
             items: opties,
             value: keuzeResto,
+            style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: Colors.black),
+            icon: Icon(
+              Icons.arrow_drop_down,
+              color: Colors.greenAccent,
+              size: 50,
+            ),
             onChanged: (value) {
               setState(() {
                 keuzeResto = value;
