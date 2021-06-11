@@ -32,7 +32,10 @@ class AppTreeState extends State<AppTree> {
     videoController.play();
 
 
-    return Column(children: <Widget>[
+    return new Container(
+      child: SingleChildScrollView(
+        child: new Column(
+        children: <Widget>[
       Container(
         height: 100,
         child: Card(
@@ -115,7 +118,10 @@ class AppTreeState extends State<AppTree> {
           child: Icon(Icons.arrow_right),
           onPressed: () { audioPlayer.play('sounds/dogFood.mp3', volume: 100); },
       )
-    ]);
+    ]
+        )
+      )
+    );
   }
 }
 

@@ -8,6 +8,7 @@ class Extra extends StatelessWidget {
   Widget build(BuildContext buildContext) => MaterialApp(
     home: Scaffold(
       backgroundColor: Colors.blueGrey,
+      resizeToAvoidBottomInset: false,
       body: ExtraTree(),
     ),
   );
@@ -28,7 +29,9 @@ class ExtraTreeState extends State<ExtraTree>{
 
 
   Widget build(BuildContext context) {
-    return Column(
+    return new Container(
+        child: SingleChildScrollView(
+          child: new Column(
         children: <Widget>[
           Row(mainAxisAlignment: MainAxisAlignment.spaceAround, children: <Widget>[
             Row(children: <Widget>[
@@ -72,7 +75,7 @@ class ExtraTreeState extends State<ExtraTree>{
                   showDialog(
                       context: context,
                       builder: (_) => AlertDialog(
-                        title: Text('Hello there!' + tekst),
+                        title: Text('Hello there! ' + tekst),
                         content: Text('This is just to show that i can use inputfields'),
                       )
                   );
@@ -157,6 +160,8 @@ class ExtraTreeState extends State<ExtraTree>{
               )
           )
         ]
+          )
+    )
     );
   }
 }
