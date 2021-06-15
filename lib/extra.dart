@@ -91,44 +91,6 @@ class ExtraTreeState extends State<ExtraTree>{
                   ),
                   visible: zichtbaar)
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Flexible(
-                  child: SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                        children: [
-                          Image(
-                            height: 100,
-                            image: AssetImage('assets/images/gordon.jpg'),
-                          ),
-                          Image(
-                            height: 100,
-                            image: AssetImage('assets/images/gordon.jpg'),
-                          ),
-                          Image(
-                            height: 100,
-                            image: AssetImage('assets/images/gordon.jpg'),
-                          ),
-                          Image(
-                            height: 100,
-                            image: AssetImage('assets/images/gordon.jpg'),
-                          ),
-                          Image(
-                            height: 100,
-                            image: AssetImage('assets/images/gordon.jpg'),
-                          ),
-                          Image(
-                            height: 100,
-                            image: AssetImage('assets/images/gordon.jpg'),
-                          ),
-                        ]
-                    ),
-                  ),
-              ),
-            ],
-          ),
           Center(
               child: GestureDetector(
                   onTap: () {

@@ -5,6 +5,7 @@ import 'gordon.dart';
 import 'recipes.dart';
 import 'restaurants.dart';
 import 'extra.dart';
+import 'info.dart';
 
 void main() {
   runApp(GordonApp());
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-        length: 4,
+        length: 5,
         child: Scaffold(
             appBar: AppBar(
               title: Text("Gordon Ramsay"),
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
                   Tab(icon:Icon(Icons.home), text:"Home"),
                   Tab(icon:Icon(Icons.food_bank_sharp), text:"Restaurants"),
                   Tab(icon:Icon(Icons.fastfood_sharp), text:"Recipes"),
+                  Tab(icon:Icon(Icons.person), text:"Info"),
                   Tab(icon:Icon(Icons.access_alarm), text:"Extra"),
                 ]
             ),
@@ -44,6 +46,7 @@ class MyApp extends StatelessWidget {
                 Gordon(),
                 Restaurants(),
                 Recipes(),
+                Info(),
                 Extra(),
               ],
             )
