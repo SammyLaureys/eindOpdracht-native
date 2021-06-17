@@ -70,7 +70,7 @@ class AppTreeState extends State<AppTree> {
           child: VideoPlayer(videoController),
         ),
       ),
-      createCards,
+      createCards(),
       RaisedButton(
           child: Icon(Icons.arrow_right),
           onPressed: () { audioPlayer.play('sounds/dogFood.mp3', volume: 100); },
@@ -80,35 +80,47 @@ class AppTreeState extends State<AppTree> {
       )
     );
   }
+
+  Widget createCards() {
+    return
+    Column(
+      children: [
+        for (var i = 0; i < lib.quotes.length; i++)
+          createCard(i)
+      ],
+    );
+  }
+
+  Widget createCard(int i){
+    return Card(
+      margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 15.0),
+      color: Colors.white,
+      elevation: 5,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(15.0),
+      ),
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          ListTile(
+            leading: CircleAvatar(
+              backgroundImage: AssetImage(
+                  "" + lib
+                      .quotes[i]['picture']), // no matter how big it is, it won't overflow
+            ),
+            title: Text("" + lib.quotes[i]['quote'],
+                style: TextStyle(color: Colors.grey)),
+          ),
+        ],
+      ),
+    );
+  }
 }
 
-Widget createCards =
-Column(
-  children: [
-    for (var i = 0; i < lib.quotes.length; i++)
-      Card(
-        margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 15.0),
-        color: Colors.white,
-        elevation: 5,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(15.0),
-        ),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: <Widget>[
-            ListTile(
-              leading: CircleAvatar(
-                backgroundImage: AssetImage(
-                    "" + lib.quotes[i]['picture']), // no matter how big it is, it won't overflow
-              ),
-              title: Text("" + lib.quotes[i]['quote'],
-                  style: TextStyle(color: Colors.grey)),
-            ),
-          ],
-        ),
-      ),
-  ],
-);
+
+
+
+
 
 
 
