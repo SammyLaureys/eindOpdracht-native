@@ -36,3 +36,45 @@ List<Map<String, String>> dishes = [
 
 ];
 
+List<Map<String, String>> quotes = [
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "This crab is so undercooked I can still hear it singing Under the Sea. -Gordon Ramsay",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "This lamb is so undercooked, its following Mary to school! -Gordon Ramsay",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "My gran could do better!",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "For what we are about to eat, may the Lord make us truly not vomit.",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "You're getting your knickers in a twist!",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "This pizza is so disgusting, if you take it to Italy you'll get arrested.",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "There’s enough garlic in here to kill every vampire in Europe.",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "This is a really tough decision…’cause you’re both crap",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "After trying Hawaiian pizza: “This isn’t a pizza, this is a mistake. This is an Italian tragedy.”",
+  },
+  {
+    "picture": "assets/images/resto.jpg",
+    "quote": "Why did the chicken cross the road? Because you didn’t f—ing cook it!",
+  },
+];
